@@ -1,0 +1,37 @@
+{
+  "name": "reuters-dataset",
+  "version": "0.0.1",
+  "description": "🗞️ A tool for downloading and parsing Reuters-21578. These are a collection of documents that appeared on Reuters newswire back in 1987.",
+  "main": "dist",
+  "repository": "https://github.com/cawfree/reuters-dataset",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "pretty": "prettier src/* --write",
+    "build": "babel src --out-dir dist && uglifyjs dist/* -o dist/*",
+    "test": "jest",
+    "start": "npm run-script build && node dist"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ""
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "husky": "^4.0.6",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "uglify-js": "^3.7.4"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "tar": "^5.0.5",
+    "xml2js": "^0.4.23"
+  }
+}
