@@ -145,10 +145,10 @@ export default (
       ])
     )
     .then(([exchanges, orgs, people, places, topics, articles]) => ({
-      exchanges,
-      orgs,
-      people,
-      places,
-      topics,
-      articles
+      exchanges: [].concat(...exchanges),
+      orgs: [].concat(...orgs),
+      people: [].concat(...people),
+      places: [].concat(...places),
+      topics: [].concat(...topics),
+      articles: [].concat(...articles),
     }));

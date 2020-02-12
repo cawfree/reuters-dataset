@@ -8,5 +8,5 @@ it('should download and parse the reuters newswire stories', async () => {
   expect(people.length).toBe(267);
   expect(places.length).toBe(175);
   expect(topics.length).toBe(135);
-  expect(articles.length).toBe(22);
+  expect(articles.length).toBe(21578);
 });
